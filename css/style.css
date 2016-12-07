@@ -7,8 +7,8 @@ body {
     background-color: #262626;
     color: white;
     font-size: 2em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -30,9 +30,14 @@ body {
 .carousel .item {
   height: 500px;
   background-color: #777;
-
-
-
+}
+.dark-cover {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .carousel-inner > .item > img {
   position: absolute;
@@ -74,14 +79,14 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 40vh;
+    min-height: 350px;
     width: 100%;
     margin-top: 50px;
 }
 
 .innerbackground {
   border: 2px;
-  min-height: 40vh;
+  min-height: 350px;
   margin-top: 50px;
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
   background: rgba(20, 20, 25, 0.50);
@@ -96,6 +101,33 @@ body {
   font-family: 'Lato';
   font-weight: 300;
 }
+.header-background {
+   background: url("../images/groupshot.jpg") no-repeat top center fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.header-inner {
+    background: rgba(20, 20, 25, 0.50) no-repeat top center fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
 .contact-background {
    background: url("../images/war3.jpg") no-repeat top center fixed;
     -webkit-background-size: 100%;
@@ -106,7 +138,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 40vh;
+    min-height: 350px;
     width: 100%;
 }
 
@@ -120,10 +152,25 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 40vh;
-    width: 100%;
+    min-height: 3560px;
+    width: 100%
 }
 
+.bottom-image {
+  height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.logo {
+  position: relative;
+  margin-top: -100px;
+  padding-top: 15px;
+}
+a:focus, a:hover {
+  text-decoration: underline;
+  color:white;
+}
 /*override bootstrap navbar settings*/
 .navbar .navbar-nav li a:focus,.navbar .navbar-nav > li > a:hover {
   color: #fff;
@@ -139,7 +186,7 @@ body {
   background: rgba(0,0,0,0);
   border-color: transparent;
   color: #fff;
-    background: #262626;
+  background: #262626;
 }
 
 .navbar ul {
@@ -177,7 +224,17 @@ body {
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,.navbar-default .navbar-nav .open .dropdown-menu > li > a {
   color: #fff;
 }
-
+.logoimg{
+  max-height:20px;
+}
+.page-intro {
+  display:block;
+  bottom:0px;
+  margin-top: 36%;
+  max-width:80%;
+  margin-right: auto;
+  margin-left:auto;
+}
 
 /*footer*/
 .footer {
@@ -216,8 +273,18 @@ body {
     font-size: 1.5em;
     padding-bottom: .5em;
   }
+  .subheader {
+    display:none;
+  }
 }
 @media (min-width: 768px) {
+  .title-super {
+    font-size: 1.5em;
+    padding-bottom: .5em;
+  }
+  .subheader {
+    display:unset;
+  }
 
   /* Navbar positioning*/
   .navbar-wrapper {
@@ -234,12 +301,14 @@ body {
     padding-left: 0;
   }
 
-  .names {
-    font-size: 60px;
+
+  .homebackground, .contact-background, .realistic-background, .header-background {
+    height: 40vh;
   }
 }
 
 @media (min-width: 992px) {
+
   .homebackground {
     background: url("../images/tracking.jpg") no-repeat top center fixed;
     -webkit-background-size: cover;
@@ -251,7 +320,7 @@ body {
     width:100%;
   }
   .contact-background {
-    background: url("../images/war3.jpg") no-repeat top center fixed;
+   background: url("../images/war3.jpg") no-repeat top center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -275,30 +344,6 @@ body {
     font-size: 1.5em;
     padding-bottom: .5em;
   }
-  .carousel {
-  height: 600px;
-  margin-bottom: 60px;
-  margin-top:60px;
-
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 600px;
-  background-color: #777;
-
-
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 600px;
 
 }
 
