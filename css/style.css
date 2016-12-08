@@ -6,7 +6,7 @@ html {
 body {
     background-color: #262626;
     color: white;
-    font-size: 2em;
+    font-size: 2.5em;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
@@ -92,6 +92,14 @@ body {
   background: rgba(20, 20, 25, 0.50);
   overflow: hidden;
 }
+.contact-inner {
+  border: 2px;
+  min-height: 100px;
+  margin-top: 50px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  background: rgba(20, 20, 25, 0.50);
+  overflow: hidden;
+}
 .names, .title-super {
   font-family: 'Lato', sans-serif;
 }
@@ -99,7 +107,7 @@ body {
 
 .subtext {
   font-family: 'Lato';
-  font-weight: 300;
+  font-weight: 400;
 }
 .header-background {
    background: url("../images/groupshot.jpg") no-repeat top center fixed;
@@ -138,7 +146,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 350px;
+    min-height: 100px;
     width: 100%;
 }
 
@@ -242,7 +250,7 @@ a:focus, a:hover {
   bottom: 0;
   width: 100%;
 /* Set the fixed height of the footer here */
-  height: 60px;
+  height: 40px;
 }
 
 .footer ul {
@@ -276,6 +284,9 @@ a:focus, a:hover {
   .subheader {
     display:none;
   }
+  body {
+    font-weight:400;
+  }
 }
 @media (min-width: 768px) {
   .title-super {
@@ -301,8 +312,10 @@ a:focus, a:hover {
     padding-left: 0;
   }
 
-
-  .homebackground, .contact-background, .realistic-background, .header-background {
+  .contact-background .contact-inner {
+    height:20vh;
+  }
+  .homebackground, .realistic-background, .header-background {
     height: 40vh;
   }
 }
@@ -325,10 +338,11 @@ a:focus, a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 40vh;
+    min-height: 20vh;
     margin-top: 50px;
     width:100%;
   }
+
   .realistic-background {
     background: url("../images/police1.jpg") no-repeat top center fixed;
     -webkit-background-size: cover;
