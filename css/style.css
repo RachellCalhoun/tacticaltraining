@@ -190,6 +190,7 @@ a:focus, a:hover {
 .navbar {
   margin: 0;
   margin-bottom:20px;
+  min-height:70px;
   border-radius: 0;
   background: rgba(0,0,0,0);
   border-color: transparent;
@@ -214,6 +215,9 @@ a:focus, a:hover {
   color: #fff;
   text-decoration: underline;
 }
+.navbar-brand {
+  padding:0px;
+}
 
 .navbar-nav > li {
   padding-left: 1em;
@@ -237,8 +241,8 @@ a:focus, a:hover {
 }
 .page-intro {
   display:block;
-  bottom:0px;
-  margin-top: 36%;
+  /*bottom:0px;*/
+  margin-top: 20%;
   max-width:80%;
   margin-right: auto;
   margin-left:auto;
@@ -276,6 +280,13 @@ a:focus, a:hover {
   color: #000;
   font-style: none;
 }
+
+iframe {
+
+    max-width: 80%;
+
+}
+
 @media(min-width: 320px) {
   .title-super {
     font-size: 1.5em;
